@@ -1,35 +1,42 @@
 package com.example.numbaseball
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val intent= Intent(this,ingame::class.java)
+
+        easy.setOnClickListener(){
+            intent.putExtra("mode",0)
+            startActivity(intent)
+        }
+        normal.setOnClickListener(){
+
+            intent.putExtra("mode",1)
+            startActivity(intent)
+        }
+        hard.setOnClickListener(){
+
+            intent.putExtra("mode",2)
+            startActivity(intent)
+        }
+        crazy.setOnClickListener(){
+
+            intent.putExtra("mode",3)
+            startActivity(intent)
+        }
 
 
 
 
 
 
-
-
-//        val ran=Random()
-//        var num=ran.nextInt(8999);
-//        num+=1000
-//        println("---------------------------------------------------------------"+num)
-//        var numstr=num.toString()
-//        var sorting:Queue<Int>;
-//        sorting=LinkedList();
-//
-//        for(i in 0..numstr.length-1){
-//            println(i)
-//            println(numstr[i])
-//            sorting.add(Integer.parseInt(numstr[i].toString()))
-//        }
-//        println(sorting)
 
 
 
