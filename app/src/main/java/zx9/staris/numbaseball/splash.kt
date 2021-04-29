@@ -1,4 +1,4 @@
-package com.example.numbaseball
+package zx9.staris.numbaseball
 
 import android.annotation.SuppressLint
 import android.content.Intent

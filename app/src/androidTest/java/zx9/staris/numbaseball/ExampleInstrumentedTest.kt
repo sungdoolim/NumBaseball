@@ -1,4 +1,4 @@
-package com.example.numbaseball
+package zx9.staris.numbaseball
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

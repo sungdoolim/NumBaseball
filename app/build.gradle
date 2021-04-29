@@ -6,7 +6,7 @@ android {
     compileSdkVersion 30
 
     defaultConfig {
-        applicationId "com.example.numbaseball"
+        applicationId "zx9.staris.numbaseball"
         minSdkVersion 14
         targetSdkVersion 30
         versionCode 1
